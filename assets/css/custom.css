@@ -1,0 +1,55 @@
+*{margin:0; padding:0;}
+a.button{display:inline-block; padding: 10px 20px; text-decoration:none; color:#fff; background:#000; margin:20px;}
+#modal{
+    display:none;
+    position:fixed;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.7);
+}
+.modal-con{
+    display:none;
+    position:fixed;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    max-width: 60%;
+    min-height: 30%;
+    background:#fff;
+}
+.modal-con .title{
+    font-size:3px;
+    padding: 3px;
+    background : royalblue;
+}
+.modal-con .con{
+    font-size:15px; line-height:1.3;
+    padding: 30px;
+}
+.modal-con .close{
+    display:block;
+    position:absolute;
+    width:30px; height:30px;
+    border-radius:50%;
+    border: 3px solid #000;
+    text-align:center; line-height: 30px;
+    text-decoration:none;
+    color:#000; font-size:20px; font-weight: bold;
+    right:10px; top:10px;
+}
+
+.input-group-password{
+	display: flex;
+	flex-direction: column;
+}
+.input-group-password input{
+	outline: none;
+	padding-left: 20px;
+	border: 1px solid #e0e0e0;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+.form-control.readonly:active{
+	background: #fff !important;
+	border: none;
+}
