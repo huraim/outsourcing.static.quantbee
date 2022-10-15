@@ -250,6 +250,244 @@ h3, h4, h5, h6 {
   .pricing-content-wrap #pills-home-tab {
     border-radius: 5px; }
 
+.wrapper_inner {
+  position: relative;
+  z-index: 2;
+  width: 1400px;
+  margin: 0 auto;
+  text-align: center; }
+
+.index_main_area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 147px 0 56px 0;
+  background-image: url("../img/screen/blockchain_bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .index_main_area::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(29, 29, 29, 0.88) 0%, #1d1d1d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(29, 29, 29, 0.88) 0%, #1d1d1d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .index_main_area .index_main_text .index_main_title {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #fff; }
+    .index_main_area .index_main_text .index_main_title span {
+      color: #FFBC0D; }
+  .index_main_area .index_main_text .index_main_sub {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.84); }
+  .index_main_area iframe {
+    margin-top: 42px;
+    width: 800px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18); }
+  .index_main_area .index_main_line {
+    margin: 42px 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.12); }
+
+.index_main_percent_ul {
+  font-size: 0; }
+
+.index_main_percent_li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 92px; }
+  .index_main_percent_li:first-child {
+    margin-left: 0; }
+  .index_main_percent_li .index_main_percent {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #fff; }
+    .index_main_percent_li .index_main_percent img {
+      margin-left: 8px; }
+  .index_main_percent_li .index_main_percent_label {
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.64); }
+
+.index_main_robot {
+  position: absolute;
+  right: 0;
+  bottom: -106px; }
+
+.index_value_area {
+  position: relative;
+  padding: 96px 0 152px 0;
+  background-color: #fff;
+  background-image: url("../img/index/index_value_bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .index_value_area .index_value_title {
+    font-size: 48px;
+    line-height: 48px;
+    color: #1d1d1d; }
+    .index_value_area .index_value_title span {
+      margin-left: 6px;
+      display: inline-block;
+      position: relative;
+      background-color: #1d1d1d;
+      padding: 8px 52px;
+      border-radius: 50px;
+      color: #FFBC0D; }
+      .index_value_area .index_value_title span::before, .index_value_area .index_value_title span::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: 50%;
+        transform: translateY(-50%); }
+      .index_value_area .index_value_title span::before {
+        left: 12px; }
+      .index_value_area .index_value_title span::after {
+        right: 12px; }
+
+.index_value_ul {
+  display: flex;
+  align-items: center;
+  margin-top: 82px;
+  font-size: 0; }
+
+.index_value_li {
+  position: relative;
+  padding: 26px;
+  width: calc((100% - 32px)/3);
+  height: 306px;
+  margin-left: 16px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #1d1d1d; }
+  .index_value_li.risk::before {
+    background-color: #FF2525; }
+  .index_value_li.risk img {
+    right: 38px;
+    bottom: -30px; }
+  .index_value_li.money::before {
+    background-color: #FFBC0D; }
+  .index_value_li.money img {
+    right: 42px;
+    bottom: -34px; }
+  .index_value_li.easy::before {
+    background-color: #4343DA; }
+  .index_value_li.easy img {
+    right: 0;
+    bottom: -42px; }
+  .index_value_li::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 4px;
+    top: 4px;
+    border: 1px solid #1d1d1d;
+    border-radius: 5px; }
+  .index_value_li:first-child {
+    margin-left: 0; }
+  .index_value_li img {
+    position: absolute; }
+  .index_value_li .index_value_contents_title {
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 600; }
+  .index_value_li .index_value_contents_sub {
+    margin-top: 16px;
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(29, 29, 29, 0.04);
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1d1d1d; }
+
+.index_value_split {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: block;
+  z-index: 2; }
+
+.index_trial_area {
+  position: relative;
+  padding: 110px 0;
+  background-image: url("../img/index/index_trial_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .index_trial_area::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.9); }
+  .index_trial_area .index_trial_img {
+    margin: 38px 0; }
+
+.index_trial_title {
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff; }
+  .index_trial_title span {
+    color: #FFBC0D;
+    font-weight: 700; }
+
+.index_trial_sub {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.84); }
+  .index_trial_sub span {
+    color: #fff;
+    font-weight: 500; }
+
+.index_trial_btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 38px;
+  padding: 17px 49px;
+  border-radius: 50px;
+  background-color: #FFBC0D;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #1d1d1d; }
+  .index_trial_btn:hover {
+    color: #1d1d1d; }
+  .index_trial_btn img {
+    margin-left: 10px; }
+
 .hero-section {
   background-color: #1d1d1d !important; }
 
