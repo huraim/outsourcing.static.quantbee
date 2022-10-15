@@ -1,0 +1,49 @@
+.pricing-section {
+  position: relative;
+  background-size: cover !important;
+  height: 600px;
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, .84);
+  }
+}
+
+.plan_container {
+  margin-top: -490px;
+  .pricing_title {
+    margin-top: 10px;
+    color: #fff;
+  }
+  .pricing_sub {
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .64);
+  }
+}
+
+.pricing-content-wrap {
+  overflow: hidden;
+  border: 2px solid #e6e6e6;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .18);
+  .price_feature_area {
+    background-color: #343434;
+  }
+  .price_subscription_area {
+    background-color: #e6e6e6;
+    .btn-primary {
+      color: #1d1d1d;
+      font-weight: 700;
+    }
+  }
+  #pills-home-tab {
+    border-radius: 5px;
+  }
+}

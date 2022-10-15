@@ -50,6 +50,9 @@
   <link rel="stylesheet" href="assets/css/custom.css">
   <!--custom css end-->
 
+  <!-- taka outsourcing START -->
+  <link rel="stylesheet" href="./assets/css/outsourcing.css">
+  <!-- taka outsourcing END -->
 </head>
 
 <body>
@@ -65,11 +68,11 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/style_profile.css">
     <header class="main-header w-100">
-      <nav class="navbar navbar-expand-xl navbar-light sticky-header">
+      <nav class="navbar navbar-expand-xl navbar-light sticky-header position-basic">
         <div class="container d-flex align-items-center justify-content-lg-between position-relative">
           <a href="./index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
-            <img src="./assets/img/brand-logo/Logo_100x34.png" alt="logo" class="img-fluid logo-white" />
-            <img src="./assets/img/brand-logo/Logo_100x34.png" alt="logo" class="img-fluid logo-color" />
+            <img src="./assets/img/brand-logo/Logo_white.png" alt="logo" class="img-fluid logo-white" />
+            <img src="./assets/img/brand-logo/Logo_black.png" alt="logo" class="img-fluid logo-color" />
           </a>
           <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
             <span class="far fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
@@ -117,79 +120,75 @@
         </div>
       </nav>
     </header>
-    <section class="pricing-section position-relative overflow-hidden bg-dark text-white pt-120"
-      style="background: url('assets/img/page-header-bg.svg')no-repeat center center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-12">
-            <div class="section-heading text-center z-5 position-relative">
-              <h4 class="h5 text-warning">Plans &amp; Pricing</h4>
-              <h2>데이터 분석 소프트웨어 정기구독</h2>
-              <p>데이터 분석 및 예측 서비스로 비지니스를 업그레이드 시키세요 !</p>
-            </div>
+    <section class="pricing-section position-relative bg-dark text-white pt-120"
+      style="background: url('assets/img/screen/detail_page_bg.png') no-repeat bottom right">
+    </section>
+    <div class="container plan_container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="section-heading text-center z-5 position-relative">
+            <h4 class="h5 text-warning">Plans &amp; Pricing</h4>
+            <h2 class="pricing_title">퀸트비 멤버십 안내</h2>
+            <p class="pricing_sub">프리미엄 멤버십을 지금 바로 무료 체험해보세요!</p>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10">
-            <div
-              class="pricing-content-wrap mb--100 bg-white rounded-custom shadow-lg border d-fle z-10 position-relative">
-              <div class="price-feature-col pricing-feature-info left-radius bg-primary-soft p-5">
-                <ul class="list-unstyled pricing-feature-list pricing-included-list mb-0">
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> PC / Mobile 완벽 호환
-                  </li>
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 16+개 이상의 시각화 기능
-                  </li>
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 데이터 랭글링을 통한 비니지스화
-                  </li>
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 알고리즘을 통한 변동성 예측
-                  </li>
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 30+개 이상의 조건식 알고리즘
-                  </li>
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 빅데이터의 분석 및 통계
-                  </li>
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 조건식 컨펌 시 자동 알림기능
-                  </li>
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 내 업무에 바로 응용 가능
-                  </li>
-                  <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Windows / Mac
-                    제한없는 호환
-                  </li>
-                </ul>
-              </div>
-              <div class="price-feature-col pricing-action-info p-5">
-                <ul class="nav nav-pills mb-4 pricing-tab-list" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                      type="button" role="tab" aria-controls="pills-home" aria-selected="true">Premium
-                    </button>
-                  </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade active show" id="pills-home" role="tabpanel"
-                    aria-labelledby="pills-home-tab">
-                    <h3 class="h5">Premium Monthly</h3>
-                    <p><span class="text-danger">*</span>구독자 전용 알림 시스템 추가 제공</br><span
-                        class="text-danger">*</span>Qu_Signal+ / <span class="text-danger">*</span>외 3개의 툴을 포함합니다</p>
-                    <div class="pricing-price mt-5">
-                      <h3 class="h5"> 비 회원가</h3>
-                      <h4 class="h1 fw-bold">1,000,000 <span>/Month</span></h4>
-                    </div>
-                    <button type="button" class="btn btn-primary mt-3" data-prod-id="1" onclick="payInit(this)"><span
-                        class="text-white">구독하기</span>
-                    </button>
-                    <br>
-                    <a href="#docModal" class="fa-pull-right" data-toggle="modal" data-target="#docModal"
-                      style="font-size: 0.5rem">구매약관</a>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="pricing-content-wrap mb--100 bg-white rounded-custom d-fle z-10 position-relative">
+            <div class="price-feature-col pricing-feature-info left-radius bg-primary-soft p-5 price_feature_area">
+              <ul class="list-unstyled pricing-feature-list pricing-included-list mb-0">
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> PC / Mobile 완벽 호환
+                </li>
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 16+개 이상의 시각화 기능
+                </li>
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 데이터 랭글링을 통한 비니지스화
+                </li>
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 알고리즘을 통한 변동성 예측
+                </li>
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 30+개 이상의 조건식 알고리즘
+                </li>
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 빅데이터의 분석 및 통계
+                </li>
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 조건식 컨펌 시 자동 알림기능
+                </li>
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> 내 업무에 바로 응용 가능
+                </li>
+                <li class="py-1"><i class="fas fa-check-circle text-primary me-2"></i> Windows / Mac
+                  제한없는 호환
+                </li>
+              </ul>
+            </div>
+            <div class="price-feature-col pricing-action-info p-5 price_subscription_area">
+              <ul class="nav nav-pills mb-4 pricing-tab-list" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Premium
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade active show" id="pills-home" role="tabpanel"
+                  aria-labelledby="pills-home-tab">
+                  <h3 class="h5">Premium Monthly</h3>
+                  <p><span class="text-danger">*</span>구독자 전용 알림 시스템 추가 제공</br><span
+                      class="text-danger">*</span>Qu_Signal+ / <span class="text-danger">*</span>외 3개의 툴을 포함합니다</p>
+                  <div class="pricing-price mt-5">
+                    <h3 class="h5"> 비 회원가</h3>
+                    <h4 class="h1 fw-bold">1,000,000 <span>/Month</span></h4>
                   </div>
+                  <button type="button" class="btn btn-primary mt-3" data-prod-id="1" onclick="payInit(this)">구독하기
+                  </button>
+                  <br>
+                  <a href="#docModal" class="fa-pull-right" data-toggle="modal" data-target="#docModal"
+                    style="font-size: 0.5rem">구매약관</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning left-5"></div>
-      <div class="white-space-100 bg-white w-100"></div>
-    </section>
+    </div>
     <section class="promo-section ptb-120">
       <div class="container">
         <div class="row justify-content-center">

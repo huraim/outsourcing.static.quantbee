@@ -48955,13 +48955,13 @@ button.swiper-pagination-bullet {
 =======================*/
 /* line 25, src/assets/scss/custom/_style.scss */
 :root {
-  --bs-primary-soft: #ceddff;
-  --bs-primary-light: #3a75ff;
-  --bs-primary: #175cff;
-  --bs-primary-dark: #0048f0;
+  --bs-primary-soft: rgba(255, 188, 13, .34);
+  --bs-primary-light: #F25767;
+  --bs-primary: rgba(255, 188, 13, .84);
+  --bs-primary-dark: rgba(255, 188, 13, 1);
   --bs-secondary-light: #dcdcdf;
   --bs-secondary: #c0c0c5;
-  --bs-secondary-dark: #d6d5e1;
+  --bs-secondary-dark: rgba(255, 255, 255, .84);
   --bs-success-soft: #def4ed;
   --bs-success-light: #82d6bc;
   --bs-success: #5cc9a7;
@@ -48981,7 +48981,7 @@ button.swiper-pagination-bullet {
   --bs-purple: #442772;
   --bs-dark-soft: #c9c7f7;
   --bs-dark-light: #071c4d;
-  --bs-dark: #0b163f;
+  --bs-dark: #1d1d1d;
   --bs-dark-dark: #010e2b;
   --bs-soft-black: #181818;
   --bs-dark-black: #090909;

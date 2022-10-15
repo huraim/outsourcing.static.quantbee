@@ -1,6 +1,16 @@
-@import './header';
-@import './font';
+@import './reset/header';
+@import './reset/font';
+@import './login';
+@import './register';
+@import './contact-us';
+@import './pricing.scss';
 
 .hero-section {
   background-color: #1d1d1d !important;
+}
+
+.offcanvas-header {
+  img {
+    width: 160px;
+  }
 }

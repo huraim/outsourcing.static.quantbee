@@ -5,8 +5,10 @@
     justify-content: center;
     height: 95px;
     &.affix {
-      height: auto;
       padding: 10px;
+    }
+    &.affix, &.position-basic {
+      height: auto;
       .logo-white {
         display: none !important;
       }

@@ -4,17 +4,18 @@
     justify-content: center;
     height: 95px; }
     .main-header .navbar.affix {
-      height: auto;
       padding: 10px; }
-      .main-header .navbar.affix .logo-white {
+    .main-header .navbar.affix, .main-header .navbar.position-basic {
+      height: auto; }
+      .main-header .navbar.affix .logo-white, .main-header .navbar.position-basic .logo-white {
         display: none !important; }
-      .main-header .navbar.affix .logo-color {
+      .main-header .navbar.affix .logo-color, .main-header .navbar.position-basic .logo-color {
         display: block; }
-      .main-header .navbar.affix .nav-link {
+      .main-header .navbar.affix .nav-link, .main-header .navbar.position-basic .nav-link {
         color: #1d1d1d !important; }
-      .main-header .navbar.affix .action-btns {
+      .main-header .navbar.affix .action-btns, .main-header .navbar.position-basic .action-btns {
         font-size: 0; }
-        .main-header .navbar.affix .action-btns .btn {
+        .main-header .navbar.affix .action-btns .btn, .main-header .navbar.position-basic .action-btns .btn {
           width: 134px;
           font-size: 18px;
           line-height: 18px;
@@ -22,15 +23,15 @@
           border-radius: 5px;
           color: #1d1d1d;
           padding: 14px; }
-          .main-header .navbar.affix .action-btns .btn:hover {
+          .main-header .navbar.affix .action-btns .btn:hover, .main-header .navbar.position-basic .action-btns .btn:hover {
             color: #FFBC0D; }
-          .main-header .navbar.affix .action-btns .btn.btn-primary {
+          .main-header .navbar.affix .action-btns .btn.btn-primary, .main-header .navbar.position-basic .action-btns .btn.btn-primary {
             background-color: #ffbc0d;
             border: 1px solid #FFBC0D; }
-            .main-header .navbar.affix .action-btns .btn.btn-primary:hover {
+            .main-header .navbar.affix .action-btns .btn.btn-primary:hover, .main-header .navbar.position-basic .action-btns .btn.btn-primary:hover {
               background-color: rgba(255, 188, 13, 0.24);
               font-weight: 600; }
-      .main-header .navbar.affix .navbar-toggler {
+      .main-header .navbar.affix .navbar-toggler, .main-header .navbar.position-basic .navbar-toggler {
         color: #1d1d1d; }
     .main-header .navbar .container {
       margin: 0 20px;
@@ -124,7 +125,7 @@
 *, html, body {
   font-family: 'Pretendard' !important; }
 
-.far, .fas {
+.far, .fas, .fad {
   font-family: 'Font Awesome 6 Pro' !important; }
 
 h1, h2 {
@@ -133,7 +134,124 @@ h1, h2 {
 h3, h4, h5, h6 {
   font-weight: 500 !important; }
 
+.sign-up-in-section {
+  position: relative;
+  background-color: #1d1d1d !important;
+  background-size: 120% !important; }
+  .sign-up-in-section::before {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 0;
+    top: 0;
+    background-color: rgba(29, 29, 29, 0.88);
+    width: 100%;
+    height: 100%; }
+  .sign-up-in-section .container {
+    position: relative;
+    z-index: 2; }
+
+.register-form .btn-primary {
+  color: var(--bs-dark);
+  font-weight: 600; }
+
+.sign-up-in-section .bg-light {
+  background-color: #e6e6e6 !important; }
+
+.price-feature-col {
+  background-color: #343434; }
+
+.form-check-input:checked {
+  background-color: #FFBC0D;
+  border-color: #FFBC0D; }
+
+#btnSubmit span {
+  color: #1d1d1d; }
+
+.contact-us-promo .btn {
+  margin: 0;
+  background-color: #FFBC0D;
+  color: #1d1d1d !important;
+  font-size: 20px;
+  font-weight: 600; }
+  .contact-us-promo .btn font {
+    color: #1d1d1d;
+    font-size: 20px; }
+
+.fad::after {
+  color: #f90; }
+
+.contact-promo-info h5 {
+  font-size: 24px; }
+.contact-promo-info p {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 23px; }
+  .contact-promo-info p strong {
+    font-weight: 600; }
+
+.page-header {
+  position: relative;
+  background-size: cover !important; }
+  .page-header::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.84); }
+  .page-header .container {
+    position: relative;
+    z-index: 2; }
+    .page-header .container .lead {
+      margin-top: 8px; }
+
+.pricing-section {
+  position: relative;
+  background-size: cover !important;
+  height: 600px; }
+  .pricing-section::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.84); }
+
+.plan_container {
+  margin-top: -490px; }
+  .plan_container .pricing_title {
+    margin-top: 10px;
+    color: #fff; }
+  .plan_container .pricing_sub {
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.64); }
+
+.pricing-content-wrap {
+  overflow: hidden;
+  border: 2px solid #e6e6e6;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18); }
+  .pricing-content-wrap .price_feature_area {
+    background-color: #343434; }
+  .pricing-content-wrap .price_subscription_area {
+    background-color: #e6e6e6; }
+    .pricing-content-wrap .price_subscription_area .btn-primary {
+      color: #1d1d1d;
+      font-weight: 700; }
+  .pricing-content-wrap #pills-home-tab {
+    border-radius: 5px; }
+
 .hero-section {
   background-color: #1d1d1d !important; }
+
+.offcanvas-header img {
+  width: 160px; }
 
 /*# sourceMappingURL=outsourcing.css.map */
