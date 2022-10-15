@@ -238,6 +238,8 @@ h3, h4, h5, h6 {
   overflow: hidden;
   border: 2px solid #e6e6e6;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18); }
+  .pricing-content-wrap.sign_up_wrap {
+    border: none; }
   .pricing-content-wrap .price_feature_area {
     background-color: #343434; }
   .pricing-content-wrap .price_subscription_area {
