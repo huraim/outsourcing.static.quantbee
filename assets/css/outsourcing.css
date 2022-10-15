@@ -1,0 +1,139 @@
+.main-header {
+  z-index: 1040; }
+  .main-header .navbar {
+    justify-content: center;
+    height: 95px; }
+    .main-header .navbar.affix {
+      height: auto;
+      padding: 10px; }
+      .main-header .navbar.affix .logo-white {
+        display: none !important; }
+      .main-header .navbar.affix .logo-color {
+        display: block; }
+      .main-header .navbar.affix .nav-link {
+        color: #1d1d1d !important; }
+      .main-header .navbar.affix .action-btns {
+        font-size: 0; }
+        .main-header .navbar.affix .action-btns .btn {
+          width: 134px;
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 500;
+          border-radius: 5px;
+          color: #1d1d1d;
+          padding: 14px; }
+          .main-header .navbar.affix .action-btns .btn:hover {
+            color: #FFBC0D; }
+          .main-header .navbar.affix .action-btns .btn.btn-primary {
+            background-color: #ffbc0d;
+            border: 1px solid #FFBC0D; }
+            .main-header .navbar.affix .action-btns .btn.btn-primary:hover {
+              background-color: rgba(255, 188, 13, 0.24);
+              font-weight: 600; }
+      .main-header .navbar.affix .navbar-toggler {
+        color: #1d1d1d; }
+    .main-header .navbar .container {
+      margin: 0 20px;
+      max-width: 1400px;
+      padding: 0; }
+    .main-header .navbar .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 126px;
+      height: 100%;
+      padding: 20px;
+      color: #fff !important;
+      font-size: 18px;
+      line-height: 18px; }
+      .main-header .navbar .nav-link:hover {
+        color: #ffbc0d !important; }
+    .main-header .navbar .logo-white {
+      display: block !important; }
+    .main-header .navbar .logo-color {
+      display: none; }
+    .main-header .navbar .action-btns {
+      font-size: 0; }
+      .main-header .navbar .action-btns .btn {
+        width: 134px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        color: #fff;
+        padding: 14px; }
+        .main-header .navbar .action-btns .btn:hover {
+          color: #FFBC0D; }
+        .main-header .navbar .action-btns .btn.btn-primary {
+          background-color: rgba(255, 188, 13, 0.04);
+          border: 1px solid #FFBC0D; }
+          .main-header .navbar .action-btns .btn.btn-primary:hover {
+            background-color: #ffbc0d;
+            color: #1d1d1d;
+            font-weight: 600; }
+    .main-header .navbar .navbar-toggler {
+      color: #fff; }
+    .main-header .navbar .offcanvas .nav-link {
+      display: block;
+      color: #1d1d1d !important; }
+    .main-header .navbar .offcanvas .action-btns .btn {
+      color: #1d1d1d !important; }
+      .main-header .navbar .offcanvas .action-btns .btn:first-child {
+        margin-right: 8px;
+        border: 1px solid #FFBC0D; }
+        .main-header .navbar .offcanvas .action-btns .btn:first-child:hover {
+          background-color: #FFBC0D; }
+      .main-header .navbar .offcanvas .action-btns .btn.btn-primary {
+        background-color: #FFBC0D; }
+
+@media only screen and (max-width: 1200px) {
+  .main-header .navbar {
+    height: auto; }
+    .main-header .navbar .logo-white, .main-header .navbar .logo-color {
+      width: 160px; } }
+@font-face {
+  font-family: 'Pretendard';
+  src: url("../fonts/Pretendard-ExtraLight.woff") format("woff"), url("../fonts/Pretendard-ExtraLight.woff2");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Pretendard';
+  src: url("../fonts/Pretendard-Regular.woff") format("woff"), url("../fonts/Pretendard-Regular.woff2");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Pretendard';
+  src: url("../fonts/Pretendard-Medium.woff") format("woff"), url("../fonts/Pretendard-Medium.woff2");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Pretendard';
+  src: url("../fonts/Pretendard-SemiBold.woff") format("woff"), url("../fonts/Pretendard-SemiBold.woff2");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Pretendard';
+  src: url("../fonts/Pretendard-ExtraBold.woff") format("woff"), url("../fonts/Pretendard-ExtraBold.woff2");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Pretendard';
+  src: url("../fonts/Pretendard-Black.woff") format("woff"), url("../fonts/Pretendard-Black.woff2");
+  font-weight: 800;
+  font-style: normal; }
+*, html, body {
+  font-family: 'Pretendard' !important; }
+
+.far, .fas {
+  font-family: 'Font Awesome 6 Pro' !important; }
+
+h1, h2 {
+  font-weight: 600 !important; }
+
+h3, h4, h5, h6 {
+  font-weight: 500 !important; }
+
+.hero-section {
+  background-color: #1d1d1d !important; }
+
+/*# sourceMappingURL=outsourcing.css.map */

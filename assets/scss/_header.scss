@@ -1,0 +1,132 @@
+//템플릿으로 인한 GNB 개조 START
+.main-header {
+  z-index: 1040;
+  .navbar {
+    justify-content: center;
+    height: 95px;
+    &.affix {
+      height: auto;
+      padding: 10px;
+      .logo-white {
+        display: none !important;
+      }
+      .logo-color {
+        display: block;
+      }
+      .nav-link {
+        color: #1d1d1d !important; 
+      }
+      .action-btns {
+        font-size: 0;
+        .btn {
+          width: 134px;
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 500;
+          border-radius: 5px;
+          color: #1d1d1d;
+          padding: 14px;
+          &:hover {
+            color: #FFBC0D;
+          }
+          &.btn-primary {
+            background-color: rgba(255, 188, 13, 1);
+            border : 1px solid #FFBC0D;
+            &:hover {
+              background-color: rgba(255, 188, 13, .24);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .navbar-toggler {
+        color: #1d1d1d;
+      }
+    }
+    .container {
+      margin: 0 20px;
+      max-width: 1400px;
+      padding: 0;
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 126px;
+      height: 100%;
+      padding: 20px;
+      color: #fff !important; 
+      font-size: 18px;
+      line-height: 18px;
+      &:hover {
+        color: #ffbc0d !important;
+      }
+    }
+    .logo-white {
+      display: block !important;
+    }
+    .logo-color {
+      display: none;
+    }
+    .action-btns {
+      font-size: 0;
+      .btn {
+        width: 134px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        color: #fff;
+        padding: 14px;
+        &:hover {
+          color: #FFBC0D;
+        }
+        &.btn-primary {
+          background-color: rgba(255, 188, 13, .04);
+          border : 1px solid #FFBC0D;
+          &:hover {
+            background-color: rgba(255, 188, 13, 1);
+            color: #1d1d1d;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .navbar-toggler {
+      color: #fff;
+    }
+    .offcanvas {
+      .nav-link {
+        display: block;
+        color: #1d1d1d !important;
+      }
+      .action-btns {
+        .btn {
+          color: #1d1d1d !important;
+          &:first-child {
+            margin-right: 8px;
+            border: 1px solid #FFBC0D;
+            &:hover {
+              background-color: #FFBC0D;
+            }
+          }
+          &.btn-primary {
+            background-color: #FFBC0D;
+          }
+        }
+      }
+    }
+  }
+  
+}
+//템플릿으로 인한 GNB 개조 END
+
+
+@media only screen and (max-width: 1200px) {
+  .main-header .navbar {
+    height: auto;
+    .logo-white, .logo-color {
+      width: 160px;
+    }
+  }
+}
