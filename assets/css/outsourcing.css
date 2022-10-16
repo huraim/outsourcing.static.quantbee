@@ -220,6 +220,8 @@ h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(29, 29, 29, 0.84); }
+  .pricing-section .wrapper_inner {
+    text-align: left; }
 
 .plan_container .pricing_title {
   margin-top: 10px;
@@ -302,13 +304,16 @@ h3, h4, h5, h6 {
     color: rgba(29, 29, 29, 0.74); }
 
 .pricing_review_ul {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   margin-top: 50px;
   font-size: 0; }
 
 .pricing_review_li {
   padding: 86px 20px 20px 20px;
   position: relative;
-  display: inline-block;
+  display: block;
   border-radius: 25px;
   margin-left: 16px;
   width: calc((100% - 32px)/3);
@@ -347,6 +352,9 @@ h3, h4, h5, h6 {
       color: #1d1d1d;
       font-weight: 600; }
 
+.faq_container {
+  text-align: left; }
+
 .faq_toggle_area {
   margin-top: 50px !important; }
   .faq_toggle_area .accordion-button {
@@ -354,6 +362,89 @@ h3, h4, h5, h6 {
     .faq_toggle_area .accordion-button::after {
       background-image: url("../img/pricing/pricing_faq_arrow.svg") !important; }
 
+@media only screen and (max-width: 992px) {
+  .pricing-section .plan_container .col-lg-8 {
+    width: 80%; }
+
+  .pricing-content-wrap {
+    display: inline-block !important; }
+    .pricing-content-wrap .price_feature_area {
+      border-radius: 0; }
+
+  .price_subscription_btn_area {
+    margin-top: 50px; }
+
+  .pricing_review_area {
+    padding: 60px 0; }
+
+  .pricing_review_ul {
+    flex-direction: column; }
+
+  .pricing_review_li {
+    padding: 20px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 16px;
+    display: block; }
+    .pricing_review_li:first-child {
+      margin-top: 0; }
+    .pricing_review_li .pricing_review_contents {
+      height: auto; }
+
+  .faq_toggle_area {
+    margin-top: 34px !important; } }
+@media only screen and (max-width: 768px) {
+  .pricing-section .plan_container h4 {
+    font-size: 16px; }
+  .pricing-section .plan_container .pricing_title {
+    margin-top: 8px;
+    font-size: 28px;
+    line-height: 28px; }
+  .pricing-section .plan_container .pricing_sub {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 23px; }
+  .pricing-section .plan_container .col-lg-8 {
+    width: 100%; }
+
+  .pricing-content-wrap .price_feature_area .price_feature_title {
+    font-size: 22px;
+    line-height: 22px; }
+
+  .price_feature_ul {
+    margin-top: 28px; }
+
+  .pricing_text {
+    text-align: center; }
+    .pricing_text .pricing_category {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 500;
+      color: #FFBC0D; }
+    .pricing_text .pricing_title {
+      margin-top: 8px;
+      font-size: 28px;
+      line-height: 34px; }
+    .pricing_text .pricing_sub {
+      margin-top: 8px;
+      font-size: 16px;
+      line-height: 23px; }
+
+  .pricing_review_ul {
+    margin-top: 30px; }
+
+  .pricing_review_li .pricing_review_profile {
+    width: 80px; }
+  .pricing_review_li .pricing_review_name {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 20px; }
+  .pricing_review_li .pricing_review_star {
+    width: 80px; }
+  .pricing_review_li .pricing_review_contents {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px; } }
 .wrapper_inner {
   position: relative;
   z-index: 2;
