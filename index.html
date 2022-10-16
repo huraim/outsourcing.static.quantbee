@@ -113,10 +113,9 @@
       </nav>
     </header>
 
-    <!-- <div class="section-heading text-center" data-aos="fade-up">
-      <h2>비지니스 성공과 실패의 차이</h2>
-      <p>데이터 분석 및 예측 서비스로 당신의 비니지스를 업그레이드 시키세요</p>
-    </div> -->
+
+    <div class="fixed_scolldown" style="bottom: 25px; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></div>
+    <div class="fixed_scolldown" style="bottom: 40px; animation: scrolldown 1.2s ease-in-out infinite;"></div>
 
     <section class="index_main_area">
 
@@ -270,8 +269,23 @@
   <script src="assets/js/vendors/parallax.min.js"></script>
   <script src="assets/js/vendors/aos.js"></script>
   <script src="assets/js/app.js"></script>
-  <script src="./assets/js/vendors/outsourcing.js"></script>
   <!--endbuild-->
+
+  <script>
+    var fixed_scolldown = document.querySelectorAll('.fixed_scolldown');
+    window.addEventListener('scroll', function(){
+      if(window.pageYOffset == 0) {
+        fixed_scolldown.forEach(function(e){
+          e.style.display = 'block';
+        });
+      }
+      else {
+        fixed_scolldown.forEach(function(e){
+          e.style.display = 'none';
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

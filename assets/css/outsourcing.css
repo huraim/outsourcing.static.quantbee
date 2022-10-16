@@ -502,6 +502,30 @@ h3, h4, h5, h6 {
 .onlyMobileBr {
   display: none; }
 
+.fixed_scolldown {
+  display: none;
+  position: fixed;
+  width: 1.2em;
+  height: 1.2em;
+  background-color: transparent;
+  z-index: 80;
+  left: 47%;
+  border-color: #1d1d1d;
+  transform: translate(-50%, 0%) rotate(45deg);
+  opacity: 0;
+  border-width: 0 0.25em 0.25em 0;
+  border-style: solid; }
+
+@keyframes scrolldown {
+  0% {
+    transform: translateY(20%) rotate(45deg);
+    opacity: 0.7; }
+  50% {
+    transform: translateY(0%) rotate(45deg);
+    opacity: 0.2; }
+  100% {
+    transform: translateY(20%) rotate(45deg);
+    opacity: 0.7; } }
 @media only screen and (max-width: 1400px) {
   .wrapper_inner {
     max-width: 1400px;
@@ -657,7 +681,10 @@ h3, h4, h5, h6 {
 
   .index_trial_btn {
     width: 100%;
-    margin-top: 24px; } }
+    margin-top: 24px; }
+
+  .fixed_scolldown {
+    display: block; } }
 .hero-section {
   background-color: #1d1d1d !important; }
 
