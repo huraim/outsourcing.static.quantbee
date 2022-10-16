@@ -137,7 +137,7 @@ h3, h4, h5, h6 {
 .sign-up-in-section {
   position: relative;
   background-color: #1d1d1d !important;
-  background-size: 120% !important; }
+  background-size: cover !important; }
   .sign-up-in-section::before {
     position: absolute;
     display: block;
