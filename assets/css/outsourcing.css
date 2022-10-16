@@ -168,6 +168,79 @@ h3, h4, h5, h6 {
 #btnSubmit span {
   color: #1d1d1d; }
 
+.register_left_contents_area {
+  display: flex;
+  flex-direction: column; }
+  .register_left_contents_area .register_left_contents {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+
+.register_intro_area {
+  margin-top: 32px;
+  position: relative;
+  text-align: left;
+  background-color: #1d1d1d;
+  border-radius: 14px;
+  padding: 20px; }
+  .register_intro_area .register_intro_text {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff; }
+    .register_intro_area .register_intro_text span {
+      font-weight: 600;
+      color: #FFBC0D; }
+  .register_intro_area .register_character {
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+    width: 90px; }
+
+.register_intro_ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.register_intro_li {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.74) !important; }
+  .register_intro_li:first-child {
+    margin-top: 0; }
+
+@media only screen and (max-width: 1400px) {
+  .register_intro_li {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 16px; }
+
+  .register_intro_area .register_character {
+    width: 80px; } }
+@media only screen and (max-width: 1200px) {
+  .register_intro_li {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 16px; }
+
+  .register_intro_area .register_intro_text {
+    font-size: 20px;
+    line-height: 20px; }
+  .register_intro_area .register_character {
+    width: 56px;
+    bottom: -34px;
+    right: 10px; } }
+@media only screen and (max-width: 992px) {
+  .sign_up_wrap {
+    display: flex;
+    flex-direction: column; }
+
+  .register_left_contents_area {
+    border-radius: 1rem !important; }
+
+  .register_intro_area {
+    margin-top: 0; } }
 .contact-us-promo .btn {
   margin: 0;
   background-color: #FFBC0D;
@@ -233,25 +306,25 @@ h3, h4, h5, h6 {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.64); }
 
-.pricing-content-wrap {
+.pricing_contents_area {
   overflow: hidden;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18); }
-  .pricing-content-wrap.sign_up_wrap {
+  .pricing_contents_area.sign_up_wrap {
     border: none; }
-  .pricing-content-wrap .price_feature_area {
+  .pricing_contents_area .price_feature_area {
     background-color: #343434; }
-    .pricing-content-wrap .price_feature_area .price_feature_title {
+    .pricing_contents_area .price_feature_area .price_feature_title {
       font-size: 24px;
       line-height: 24px;
       color: #fff; }
-  .pricing-content-wrap .price_subscription_area {
+  .pricing_contents_area .price_subscription_area {
     display: flex;
     flex-direction: column;
     background-color: #e6e6e6; }
-    .pricing-content-wrap .price_subscription_area .btn-primary {
+    .pricing_contents_area .price_subscription_area .btn-primary {
       color: #1d1d1d;
       font-weight: 700; }
-  .pricing-content-wrap #pills-home-tab {
+  .pricing_contents_area #pills-home-tab {
     border-radius: 5px; }
 
 .price_feature_ul {
@@ -366,9 +439,9 @@ h3, h4, h5, h6 {
   .pricing-section .plan_container .col-lg-8 {
     width: 80%; }
 
-  .pricing-content-wrap {
+  .pricing_contents_area {
     display: inline-block !important; }
-    .pricing-content-wrap .price_feature_area {
+    .pricing_contents_area .price_feature_area {
       border-radius: 0; }
 
   .price_subscription_btn_area {
@@ -407,7 +480,7 @@ h3, h4, h5, h6 {
   .pricing-section .plan_container .col-lg-8 {
     width: 100%; }
 
-  .pricing-content-wrap .price_feature_area .price_feature_title {
+  .pricing_contents_area .price_feature_area .price_feature_title {
     font-size: 22px;
     line-height: 22px; }
 

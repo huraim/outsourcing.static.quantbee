@@ -30,7 +30,7 @@
   }
 }
 
-.pricing-content-wrap {
+.pricing_contents_area {
   overflow: hidden;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .18);
   &.sign_up_wrap {
@@ -198,7 +198,7 @@
     }
   }
   
-  .pricing-content-wrap {
+  .pricing_contents_area {
     display: inline-block !important;
     .price_feature_area {
       border-radius: 0;
@@ -253,7 +253,7 @@
       }
     }
   }
-  .pricing-content-wrap {
+  .pricing_contents_area {
     .price_feature_area {
       .price_feature_title {
         font-size: 22px;
