@@ -210,8 +210,7 @@ h3, h4, h5, h6 {
 
 .pricing-section {
   position: relative;
-  background-size: cover !important;
-  height: 600px; }
+  background-size: cover !important; }
   .pricing-section::before {
     display: block;
     content: '';
@@ -222,33 +221,138 @@ h3, h4, h5, h6 {
     height: 100%;
     background-color: rgba(29, 29, 29, 0.84); }
 
-.plan_container {
-  margin-top: -490px; }
-  .plan_container .pricing_title {
-    margin-top: 10px;
-    color: #fff; }
-  .plan_container .pricing_sub {
-    margin-top: 12px;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.64); }
+.plan_container .pricing_title {
+  margin-top: 10px;
+  color: #fff; }
+.plan_container .pricing_sub {
+  margin-top: 12px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.64); }
 
 .pricing-content-wrap {
   overflow: hidden;
-  border: 2px solid #e6e6e6;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18); }
   .pricing-content-wrap.sign_up_wrap {
     border: none; }
   .pricing-content-wrap .price_feature_area {
     background-color: #343434; }
+    .pricing-content-wrap .price_feature_area .price_feature_title {
+      font-size: 24px;
+      line-height: 24px;
+      color: #fff; }
   .pricing-content-wrap .price_subscription_area {
+    display: flex;
+    flex-direction: column;
     background-color: #e6e6e6; }
     .pricing-content-wrap .price_subscription_area .btn-primary {
       color: #1d1d1d;
       font-weight: 700; }
   .pricing-content-wrap #pills-home-tab {
     border-radius: 5px; }
+
+.price_feature_ul {
+  margin-top: 32px; }
+  .price_feature_ul li {
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.64) !important;
+    padding: 0 !important;
+    line-height: 15px; }
+    .price_feature_ul li:first-child {
+      margin-top: 0; }
+
+.tab-content {
+  flex-grow: 1; }
+
+.price_subscription_contents {
+  display: flex !important;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%; }
+
+.price_subscription_btn_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .price_subscription_btn_area .fa-pull-right {
+    color: rgba(29, 29, 29, 0.64); }
+
+.pricing_review_area {
+  margin-top: 100px;
+  padding: 120px 0; }
+
+.pricing_text {
+  text-align: center; }
+  .pricing_text .pricing_category {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #FFBC0D; }
+  .pricing_text .pricing_title {
+    color: #1d1d1d;
+    margin-top: 12px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700 !important; }
+  .pricing_text .pricing_sub {
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(29, 29, 29, 0.74); }
+
+.pricing_review_ul {
+  margin-top: 50px;
+  font-size: 0; }
+
+.pricing_review_li {
+  padding: 86px 20px 20px 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+  margin-left: 16px;
+  width: calc((100% - 32px)/3);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.08); }
+  .pricing_review_li:first-child {
+    margin-left: 0; }
+  .pricing_review_li .pricing_review_bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0; }
+  .pricing_review_li .pricing_review_profile {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden; }
+  .pricing_review_li .pricing_review_name {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1d1d1d; }
+  .pricing_review_li .pricing_review_star {
+    margin-top: 8px; }
+  .pricing_review_li .pricing_review_contents {
+    margin-top: 20px;
+    text-align: left;
+    display: block;
+    height: 260px;
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    background-color: rgba(29, 29, 29, 0.04);
+    color: rgba(29, 29, 29, 0.74); }
+    .pricing_review_li .pricing_review_contents span {
+      color: #1d1d1d;
+      font-weight: 600; }
+
+.faq_toggle_area {
+  margin-top: 50px !important; }
+  .faq_toggle_area .accordion-button {
+    color: #1d1d1d; }
+    .faq_toggle_area .accordion-button::after {
+      background-image: url("../img/pricing/pricing_faq_arrow.svg") !important; }
 
 .wrapper_inner {
   position: relative;
