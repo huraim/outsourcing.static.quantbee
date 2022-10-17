@@ -35,7 +35,7 @@
   <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
   <!--title-->
-  <title>Login - Software & IT Solutions HTML Template</title>
+  <title>Pricing - Software & IT Solutions HTML Template</title>
 
   <!--google fonts-->
   <link
@@ -53,74 +53,86 @@
   <!-- taka outsourcing START -->
   <link rel="stylesheet" href="./assets/css/outsourcing.css">
   <!-- taka outsourcing END -->
-
 </head>
 
 <body>
   <div id="preloader">
     <div class="preloader-wrap">
-      <img src="./assets/img/brand-logo/QB.png" alt="logo" class="img-fluid preloader-icon" />
+      <img src="assets/img/brand-logo/QB.png" alt="logo" class="img-fluid preloader-icon" />
       <div class="loading-bar"></div>
     </div>
   </div>
   <div class="main-wrapper">
-    <!--register section start-->
     <section class="sign-up-in-section bg-dark ptb-60"
-      style="background: url('./assets/img/screen/blockchain_bg.jpg') no-repeat top left">
+      style="background: url('assets/img/page-header-bg.svg')no-repeat right bottom">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-5 col-md-8 col-12">
-            <a href="./index.html" class="mb-4 d-block text-center"><img src="./assets/img/brand-logo/Logo_white.svg" alt="logo"
-                class="img-fluid"></a>
+            <a href="index-2.html" class="mb-4 d-block text-center"><img src="assets/img/brand-logo/Logo_white.svg"
+                alt="logo" class="img-fluid"></a>
             <div class="register-wrap p-5 bg-light shadow rounded-custom">
-              <h1 class="h3 text-center">환영합니다</h1>
-              <p class="text-muted text-center">로그인 후 퀀트비 서비스를 이용하세요</p>
-              <div class="action-btns">
-                <a href="/oauth2/authorization/google"
-                  class="btn google-btn bg-white shadow-sm mt-4 d-block d-flex align-items-center text-decoration-none justify-content-center">
-                  <img src="./assets/img/google-icon.svg" alt="google" class="me-3">
-                  <span>Connect with Google</span>
-                </a>
-              </div>
-              <div class="position-relative d-flex align-items-center justify-content-center mt-4 py-4">
-                <span class="divider-bar"></span>
-                <h6 class="position-absolute text-center divider-text bg-light mb-0">Or</h6>
-              </div>
-              <form action="/signin" method="POST" class="mt-4 register-form">
+              <h1 class="fw-bold h3">비밀번호를 잊으셨나요?</h1>
+              <p class="text-muted">괜찮아요. 가입하신 이메일을 입력하시면 비밀번호 복구 링크를 보내드립니다.</p>
+              <div action="#" class="mt-5 register-form">
                 <div class="row">
                   <div class="col-sm-12">
-                    <label for="email" class="mb-1">이메일 <span class="text-danger">*</span></label>
+                    <label for="email" class="mb-1">Email <span class="text-danger">*</span></label>
                     <div class="input-group mb-3">
-                      <input type="email" class="form-control" placeholder="Email" id="email" name="username" required
+                      <input type="email" class="form-control" placeholder="Enter your email" id="email"
                         aria-label="email">
                     </div>
                   </div>
-                  <div class="col-sm-12">
-                    <label for="password" class="mb-1">비밀번호 <span class="text-danger">*</span></label>
-                    <div class="input-group mb-3">
-                      <input type="password" class="form-control" placeholder="Password" id="password" name="password"
-                        required aria-label="Password">
-                    </div>
-                  </div>
                   <div class="col-12">
-
-                    <button type="submit" class="btn btn-primary mt-3 d-block w-100">로그인</button>
+                    <button onclick="sendEmail()" class="btn btn-primary mt-3 d-block w-100">비밀번호 초기화</button>
                   </div>
                 </div>
-                <p class="font-monospace fw-medium text-center text-muted mt-3 pt-4 mb-0">
-                  아직 회원이 아니신가요? <a href="./register.html" class="text-decoration-none">회원가입</a>
-                  <br>
-                  <a href="./forgot.html" class="text-decoration-none">비밀번호 찾기</a>
+                <p class="font-monospace fw-medium text-center mt-3 pt-4 mb-0">
+                  <a href="./login.html" class="text-decoration-none">로그인 페이지로</a>
                 </p>
-              </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
   </div>
+  <script type="text/javascript">
 
-  <!--build:js-->
+    function sendEmail() {
+
+
+      if ($("#email").val() == "") {
+        alert('로그인 아이디를 입력해주세요.');
+        return false;
+      }
+      var data = {
+        username: $("#email").val(),
+      }
+
+      $.ajax({
+        url: '/email-sendPasswordEmail',
+        data: data,
+        type: 'post',
+        success: function (data) { //"inedx3"
+          if (data.result) {
+
+          } else {
+            //alert(data.message);
+          }
+          alert(data.message);
+
+        }, //success끝 
+        error: function (error) {
+          alert("오류 발생. 관리자에게 문의해주세요.");
+        },
+        complete: function () {
+          // alert("complete!");    
+        }
+      });
+
+    }
+
+  </script>
   <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
   <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
   <script src="assets/js/vendors/swiper-bundle.min.js"></script>
@@ -128,7 +140,6 @@
   <script src="assets/js/vendors/parallax.min.js"></script>
   <script src="assets/js/vendors/aos.js"></script>
   <script src="assets/js/app.js"></script>
-  <!--endbuild-->
 </body>
 
 </html>
