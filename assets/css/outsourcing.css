@@ -308,9 +308,8 @@ h3, h4, h5, h6 {
 
 .pricing_contents_area {
   overflow: hidden;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18); }
-  .pricing_contents_area.sign_up_wrap {
-    border: none; }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18);
+  border: none; }
   .pricing_contents_area .price_feature_area {
     background-color: #343434; }
     .pricing_contents_area .price_feature_area .price_feature_title {
@@ -350,6 +349,10 @@ h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
+  .price_subscription_btn_area a.fa-pull-right {
+    margin: 0;
+    color: #1d1d1d;
+    text-decoration: none; }
   .price_subscription_btn_area .fa-pull-right {
     color: rgba(29, 29, 29, 0.64); }
 
