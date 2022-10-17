@@ -86,6 +86,7 @@
         &.btn-primary {
           background-color: rgba(255, 188, 13, .04);
           border : 1px solid #FFBC0D;
+          box-shadow: none;
           &:hover {
             background-color: rgba(255, 188, 13, 1);
             color: #1d1d1d;
@@ -113,6 +114,7 @@
             }
           }
           &.btn-primary {
+            box-shadow: none;
             background-color: #FFBC0D;
           }
         }

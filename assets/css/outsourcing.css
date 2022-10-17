@@ -67,7 +67,8 @@
           color: #FFBC0D; }
         .main-header .navbar .action-btns .btn.btn-primary {
           background-color: rgba(255, 188, 13, 0.04);
-          border: 1px solid #FFBC0D; }
+          border: 1px solid #FFBC0D;
+          box-shadow: none; }
           .main-header .navbar .action-btns .btn.btn-primary:hover {
             background-color: #ffbc0d;
             color: #1d1d1d;
@@ -85,6 +86,7 @@
         .main-header .navbar .offcanvas .action-btns .btn:first-child:hover {
           background-color: #FFBC0D; }
       .main-header .navbar .offcanvas .action-btns .btn.btn-primary {
+        box-shadow: none;
         background-color: #FFBC0D; }
 
 @media only screen and (max-width: 1200px) {
