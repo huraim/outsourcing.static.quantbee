@@ -360,7 +360,7 @@
       }
       .index_main_sub {
         font-size: 22px;
-        line-height: 22px;
+        line-height: 30px;
       }
     }
     iframe {
@@ -379,6 +379,10 @@
     .index_value_title {
       font-size: 40px;
       line-height: 40px;
+      span {
+        margin-top: 8px;
+        margin-left: 0;
+      }
     }
   }
   .index_value_ul {
@@ -486,6 +490,7 @@
       font-size: 28px;
       line-height: 40px;
       span {
+        margin-top: 0;
         margin-left: 0;
         padding: 3px 40px;
         &::before, &::after {

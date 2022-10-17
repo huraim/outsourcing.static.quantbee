@@ -822,7 +822,7 @@ h3, h4, h5, h6 {
       line-height: 40px; }
     .index_main_area .index_main_text .index_main_sub {
       font-size: 22px;
-      line-height: 22px; }
+      line-height: 30px; }
     .index_main_area iframe {
       margin-top: 32px;
       width: 100%; }
@@ -837,6 +837,9 @@ h3, h4, h5, h6 {
     .index_value_area .index_value_title {
       font-size: 40px;
       line-height: 40px; }
+      .index_value_area .index_value_title span {
+        margin-top: 8px;
+        margin-left: 0; }
 
   .index_value_ul {
     margin-top: 42px;
@@ -914,6 +917,7 @@ h3, h4, h5, h6 {
       font-size: 28px;
       line-height: 40px; }
       .index_value_area .index_value_title span {
+        margin-top: 0;
         margin-left: 0;
         padding: 3px 40px; }
         .index_value_area .index_value_title span::before, .index_value_area .index_value_title span::after {
