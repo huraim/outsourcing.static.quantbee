@@ -212,6 +212,12 @@ h3, h4, h5, h6 {
   .register_intro_li:first-child {
     margin-top: 0; }
 
+.register_mobile_logo_btn {
+  display: none; }
+
+.register_pc_logo_btn {
+  display: block; }
+
 @media only screen and (max-width: 1400px) {
   .register_intro_li {
     margin-top: 6px;
@@ -234,9 +240,23 @@ h3, h4, h5, h6 {
     bottom: -34px;
     right: 10px; } }
 @media only screen and (max-width: 992px) {
+  .register_container {
+    text-align: center; }
+
+  .register_contents {
+    text-align: left; }
+
+  .register_mobile_logo_btn {
+    display: inline-block;
+    margin-bottom: 24px; }
+
+  .register_pc_logo_btn {
+    display: none; }
+
   .sign_up_wrap {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: left; }
 
   .register_left_contents_area {
     border-radius: 1rem !important; }

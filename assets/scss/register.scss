@@ -58,6 +58,12 @@
     margin-top: 0;
   }
 }
+.register_mobile_logo_btn {
+  display: none;
+}
+.register_pc_logo_btn {
+  display: block;
+}
 
 @media only screen and (max-width: 1400px) {
   .register_intro_li {
@@ -90,9 +96,23 @@
   }
 }
 @media only screen and (max-width: 992px) {
+  .register_container {
+    text-align: center;
+  }
+  .register_contents {
+    text-align: left;
+  }
+  .register_mobile_logo_btn {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+  .register_pc_logo_btn {
+    display: none;
+  }
   .sign_up_wrap {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
   .register_left_contents_area {
     border-radius: 1rem !important;
