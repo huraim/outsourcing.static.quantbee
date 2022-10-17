@@ -579,20 +579,22 @@ h3, h4, h5, h6 {
   font-size: 0; }
 
 .index_main_percent_li {
+  width: 110px;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 92px; }
+  margin-left: 66px; }
   .index_main_percent_li:first-child {
     margin-left: 0; }
   .index_main_percent_li .index_main_percent {
     display: flex;
-    align-items: center;
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 600;
-    color: #fff; }
+    align-items: center; }
+    .index_main_percent_li .index_main_percent .index_main_percent_number_area {
+      font-size: 26px;
+      line-height: 26px;
+      font-weight: 600;
+      color: #fff; }
     .index_main_percent_li .index_main_percent img {
       margin-left: 8px; }
   .index_main_percent_li .index_main_percent_label {
@@ -890,12 +892,13 @@ h3, h4, h5, h6 {
       margin: 24px 0; }
 
   .index_main_percent_li {
-    margin-left: 30px; }
-    .index_main_percent_li .index_main_percent {
+    width: 100px;
+    margin-left: 8px; }
+    .index_main_percent_li .index_main_percent .index_main_percent_number_area {
       font-size: 22px;
       line-height: 22px; }
-      .index_main_percent_li .index_main_percent img {
-        width: 18px; }
+    .index_main_percent_li .index_main_percent img {
+      width: 18px; }
     .index_main_percent_li .index_main_percent_label {
       font-size: 14px;
       line-height: 14px; }

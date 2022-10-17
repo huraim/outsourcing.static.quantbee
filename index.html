@@ -136,7 +136,7 @@
           <li class="index_main_percent_li">
 
             <div class="index_main_percent">
-              90%
+              <p class="index_main_percent_number_area"><span class="index_main_percent_number">90</span>%</p>
               <img src="./assets/img/index/index_main_percent_arrow.svg" alt="index_main_percent_arrow">
             </div>
 
@@ -146,7 +146,7 @@
           <li class="index_main_percent_li">
 
             <div class="index_main_percent">
-              93%
+              <p class="index_main_percent_number_area"><span class="index_main_percent_number">93</span>%</p>
               <img src="./assets/img/index/index_main_percent_arrow.svg" alt="index_main_percent_arrow">
             </div>
 
@@ -156,7 +156,7 @@
           <li class="index_main_percent_li">
 
             <div class="index_main_percent">
-              220%
+              <p class="index_main_percent_number_area"><span class="index_main_percent_number">220</span>%</p>
               <img src="./assets/img/index/index_main_percent_arrow.svg" alt="index_main_percent_arrow" />
             </div>
 
@@ -284,6 +284,18 @@
           e.style.display = 'none';
         });
       }
+    });
+
+    $('.index_main_percent_number').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
     });
   </script>
 </body>

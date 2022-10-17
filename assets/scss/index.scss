@@ -67,21 +67,24 @@
   font-size: 0;
 }
 .index_main_percent_li {
+  width: 110px;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 92px;
+  margin-left: 66px;
   &:first-child {
     margin-left: 0;
   }
   .index_main_percent {
     display: flex;
     align-items: center;
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 600;
-    color: #fff;
+    .index_main_percent_number_area {
+      font-size: 26px;
+      line-height: 26px;
+      font-weight: 600;
+      color: #fff;
+    }
     img {
       margin-left: 8px;
     }
@@ -461,10 +464,13 @@
     }
   }
   .index_main_percent_li {
-    margin-left: 30px;
+    width: 100px;
+    margin-left: 8px;
     .index_main_percent {
-      font-size: 22px;
-      line-height: 22px;
+      .index_main_percent_number_area {
+        font-size: 22px;
+        line-height: 22px;
+      }
       img {
         width: 18px;
       }
